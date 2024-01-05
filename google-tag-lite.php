@@ -4,7 +4,17 @@ Plugin Name: Google Tag Lite
 Description: Enqueues the gtag.js script on the website's frontend based on the provided GTM (Google Tag Manager) ID, ensuring proper tracking and analytics integration.
 Version: 1.0
 Author: spamdalfz
+Author URI: https://github.com/spamdalfz/
 */
+
+function add_view_details_link_to_plugin_meta($links, $file) {
+    if (plugin_basename(__FILE__) === $file) {
+        $details_link = '<a href="https://github.com/spamdalfz/Google-Tag-Lite" target="_blank">View details</a>';
+        $links[] = $details_link;
+    }
+    return $links;
+}
+add_filter('plugin_row_meta', 'add_view_details_link_to_plugin_meta', 10, 2);
 
 // Add plugin settings menu
 function custom_google_tag_manager_menu() {
