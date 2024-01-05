@@ -57,4 +57,20 @@ function add_google_tag_manager_script() {
         );
     }
 }
+
+function display_google_tag_manager_updated_message() {
+    if (isset($_GET['settings-updated']) && $_GET['settings-updated']) {
+        add_action('admin_notices', 'google_tag_manager_updated_message');
+    }
+}
+add_action('admin_init', 'display_google_tag_manager_updated_message');
+
+function google_tag_manager_updated_message() {
+    ?>
+    <div class="updated notice is-dismissible">
+        <p>Google Tag Manager ID updated successfully!</p>
+    </div>
+    <?php
+}
+
 add_action('wp_enqueue_scripts', 'add_google_tag_manager_script');
