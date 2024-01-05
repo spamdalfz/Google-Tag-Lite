@@ -1,4 +1,4 @@
-# Custom Google Tag Manager Plugin
+# Custom Google Tag Manager Plugin (Google Tag Lite)
 
 ## Description
 
