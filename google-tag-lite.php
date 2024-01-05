@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Google Tag Lite
-Description: Add Google Tag Manager to your Site
+Description: Enqueues the gtag.js script on the website's frontend based on the provided GTM (Google Tag Manager) ID, ensuring proper tracking and analytics integration.
 Version: 1.0
 Author: spamdalfz
 */
