@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Google Tag Lite
-Description: Add Google Tag Manager to your site
+Description: Add Google Tag Manager to your Site
 Version: 1.0
 Author: spamdalfz
 */
